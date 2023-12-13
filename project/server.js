@@ -95,6 +95,7 @@ fetch('https://www.lcsd.gov.hk/datagovhk/event/venues.xml')
                   newVenue.venueName = venueName;
                   newVenue.latitude = latitude;
                   newVenue.longitude = longitude;
+                  newVenue.NoOfEvent = 0;
                   await newVenue.save();
                 }
               });
